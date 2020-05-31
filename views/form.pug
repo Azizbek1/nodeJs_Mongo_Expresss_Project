@@ -1,0 +1,26 @@
+include ./layout
+.container
+  form.header__form(action='/registr', method='POST')
+    label.header__label(for='text')
+      | Ismingizni qoldiring
+    input#text.header__input(type='text', name='name', placeholder='Name')
+    label.header__label(for='famil')
+      | Familiyangizni qoldiring
+    input#famil.header__input(type='text', name='surname', placeholder='Surname')
+    label.header__label(for='malee')
+      | Email qoldiring
+    input#malee.header__input(type='email', name='email', placeholder='Email')
+    label.header__label(for='yosh')
+      | Yoshingiz
+    input#yosh.header__input.header__input-yosh(type='text', name='age', placeholder='Age-Number')
+    label.header__label(for='yosh1')
+      | Telefon Raqamingiz
+    input#yosh1.header__input.header__input-yosh(type='text', name='number', placeholder='Number')
+    .header__flex
+      label.header__inplab(for='inp')
+        | rasim yuklamoq  
+        i.far.fa-user-astronaut
+      input#inp.header__input-file(type='file', name='images')
+    button.header__btn(type='submit') bazaga  yuborish
+
+

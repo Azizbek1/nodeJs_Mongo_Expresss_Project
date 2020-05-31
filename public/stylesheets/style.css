@@ -1,0 +1,169 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+
+.header_nav_collapse{
+  display: flex;
+  justify-content: flex-end;
+}
+nav{
+  background: rgb(10, 82, 124);
+}
+nav .navbar-nav .nav-item .nav-link{
+  color: white;
+}
+nav .navbar-nav .nav-item .nav-link:hover{
+  color: red;
+}
+nav .navbar-nav .nav-item.active .nav-link{
+  color: red;
+}
+.navbar-brand{
+  color: white;
+}
+
+.block{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.block_images{
+  width: 400px;
+  height: 300px;
+  border: 2px solid rgb(0, 130, 236);
+  border-radius: 10px;
+}
+.block_images img{
+  width : 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.block_info{
+  width: 50%;
+  box-shadow: 0 0 15px black;
+  padding: 10px;
+}
+.block_info_phone-info{
+  font-size: 20px;
+  text-decoration: underline;
+  color: rgb(6, 87, 141);
+}
+.block_title{
+  text-align: center;
+}
+.block_info-db{
+  color: rgb(161, 68, 34);
+  font-weight: 700;
+  text-shadow: 0 0  1px yellow;
+}
+.block_title_h2{
+  color: cornflowerblue;
+  font-weight: 700;
+}
+.block_info_name{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+span{
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ======== */
+.header{
+  text-align: center;
+}
+.header__title{
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: black;
+  text-shadow: 0 0 5px rgb(15, 128, 0);
+}
+.header__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.header__input{
+  margin-bottom: 10px;
+  width: 30%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid grey;
+  box-shadow:  0 0 10px green;
+  padding: 5px;
+}
+.header__input-text{
+  height: 80px;
+}
+.header__label{
+  cursor: pointer;
+  text-decoration: underline;
+  color: green;
+  font-size: 18px;
+  text-shadow: 0 0 10px yellow;
+}
+.header__gender-MANWOMAN{
+  color: tomato;
+  text-decoration: underline;
+}
+.header__input-yosh{
+  height: 30px;
+}
+
+.header__input-file{
+  opacity: 0;
+}
+.header__inplab{
+  box-shadow:  0 0 10px green;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(2, 122, 126);
+  text-decoration: underline;
+  margin-top: 30px;
+}
+.fa-user-astronaut{
+  color: rgb(0, 204, 255);
+  font-size: 25px;
+  margin-left: 15px;
+}
+.header__flex{
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header__btn{
+  border: none;
+  box-shadow: 0 0 10px rgb(56,100,38);
+  font-size: 15px;
+  padding: 15px 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #3da35a;
+  color: white;
+  border-radius: 5px;
+}

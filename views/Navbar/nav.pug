@@ -1,0 +1,22 @@
+nav.navbar.navbar-expand-lg
+  a.navbar-brand(href='#') Malumotlar omborxonasi
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse.header_nav_collapse
+    ul.navbar-nav
+      if isIndex
+        li.nav-item.active
+            a.nav-link(href='/')
+              | Bosh sahifa  
+              span.sr-only (current)
+      else     
+        li.nav-item
+            a.nav-link(href='/')
+              | Bosh sahifa  
+              span.sr-only (current) 
+      if FormIndex 
+        li.nav-item.active
+            a.nav-link(href='/registr') Malumot Kiritish
+      else
+        li.nav-item
+            a.nav-link(href='/registr') Malumot Kiritish 

@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  h1= title
+  p Hush kelibsiz "#{title}"
+  if user.length
+    for i in user  
+      .block
+        .block_images
+          img(src="/images/" + i.images , alt="")  
+        .block_info
+          .block_title
+            h2.block_title_h2 Info
+          .block_info_name
+            span.block_info_phone-info Name:
+            span.block_info-db=i.name
+          .block_info_name
+            span.block_info_phone-info Surname:
+            span.block_info-db=i.surnaname
+          .block_info_name
+            span.block_info_phone-info Age:
+            span.block_info-db=i.age
+          .block_info_name
+            span.block_info_phone-info  Email:
+            span.block_info-db=i.email
+          .block_info_name
+            span.block_info_phone-info Number:
+            span.block_info-db=i.number
+  else 
+    p Malumot kiritilmagan   
+    
+
+  
+
